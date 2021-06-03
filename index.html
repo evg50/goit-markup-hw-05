@@ -23,7 +23,7 @@
                 
                 <ul class="auth-nav list">
                     <li class="item"><a href="mailto:info@studio.com" class="link">
-                        <svg class="title-icon">
+                        <svg class="title-icon"> 
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>info@studio.com
                         </a>
@@ -35,6 +35,7 @@
                         </a>
                     </li>  
                 </ul>
+                
             </nav>              
         </header>        
         <main>
@@ -42,8 +43,9 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">эффективные решения <br>  для вашего бизнеса</h1>            
-                    <button type="button" class="button-hero"> Заказать услугу</button>
+                    <button type="button" class="button-hero" data-modal-open> Заказать услугу</button>
                 </div>
+                
                 
             </section>
             <section class="section features">    
@@ -370,8 +372,14 @@
                             
                         </ul>    
                     </div>
-        </footer> 
-
+        </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p class="modal-title">Свяжитесь с нами</p>
+                <button class="btn-close" data-modal-close>x</button>
+            </div>
+        </div> 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
